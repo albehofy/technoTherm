@@ -1,0 +1,140 @@
+@import url(./navbar.css);
+
+main {
+  margin-top: 100px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+section {
+  padding: 21px 0;
+  margin: 42px auto;
+}
+
+main p {
+  text-align: initial;
+}
+
+.about-header {
+  display: inline-block;
+  border-bottom: 3px solid #080;
+  font-size: 2.5em;
+  text-align: center;
+  /* padding: 50px 0 14px 0; */
+  padding: 21px;
+  margin-bottom: 21px;
+  font-family: NeoSansArabic;
+  color: #fff;
+  width: 500px;
+  color: orange;
+}
+.center {
+  padding: 50px 0;
+  margin: 21px auto;
+  background-color: #fff4de;
+}
+
+.about-sub-header {
+  font-size: 2em;
+  text-align: center;
+  padding: 21px 0;
+  font-family: NeoSansArabic;
+  color: orange;
+}
+
+.special-mark {
+  color: #eb7a0f;
+}
+.special-mark span {
+  color: #080;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  letter-spacing: 1.2px;
+  line-height: 200%;
+  padding: 21px;
+}
+.flex {
+  padding: 42px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-fluid {
+  /* height: 300px; */
+  width: 100%;
+  /* border: 1px solid #333; */
+  padding: 20px 0;
+  /* background-color: #967d30; */
+  /* background: linear-gradient(45deg, #f0fffa, #fff); */
+  /* background: linear-gradient(45deg, #098341, #daad29); */
+  /* background-color: #eb7a0f; */
+  /* background: linear-gradient(45deg, #eb7a0f, #fcc899); */
+  /* color: #fff; */
+}
+figure {
+  height: calc(90vh - 100px);
+  width: 50%;
+}
+.flex img {
+  height: 500px;
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  background-color: #eb7a0f;
+  margin: 21px auto 42px;
+}
+
+a.products {
+  display: block;
+  margin: 20px auto;
+  background: #080;
+  width: 70%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 7px;
+}
+.certificates {
+  width: 90%;
+  margin: 21px auto;
+  padding: 21px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.certificates img {
+  width: 21%;
+  min-width: 300px;
+}
+@media screen and (max-width: 1120px) {
+  .flex.flex-reverse {
+    flex-direction: column-reverse;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 670px) {
+  /* .img-fluid {
+    height: 50vh;
+  } */
+  figure {
+    height: auto;
+  }
+  img {
+    width: 100%;
+  }
+  .certificates img {
+    width: 90%;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,111 @@
+/* importing new fonts from google fonts */
+@font-face {
+  font-family: "mobily";
+  src: url(./fonts/mobily.ttf);
+}
+@font-face {
+  font-family: NeoSansArabic;
+  src: url(./fonts/NeoSansArabic.ttf);
+}
+/* @font-face {
+  font-family: fo;
+  src: url(./fonts/DIN-NEXT_-ARABIC-REGULAR.otf);
+} */
+/* @font-face {
+  font-family: fo;
+  /* src: url(./fonts/NeoSansArabic.ttf); 
+} */
+@font-face {
+  font-family: "amiri";
+  /* src: url(./fonts/amiri-regular.ttf); */
+  src: url(./fonts/DIN-NEXT_-ARABIC-REGULAR.otf);
+}
+
+/* seeting variables */
+:root {
+  --dark: #333;
+  --light: #fff;
+  --green: #1b8a0e;
+  --small-size: 16px;
+  --normal-size: 18px;
+  --medium-size: 20px;
+  --large-size: 27px;
+}
+
+/* global settings */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  overflow-x: hidden;
+  font-family: "amiri", sans-serif;
+}
+/* loader */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 500ms ease;
+}
+/* end loader */
+/* after loader */
+.after-loader {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+/* end after loader */
+/* fixed conatct info */
+.fixed-contact-info {
+  width: 10%;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: fixed;
+  bottom: 5%;
+  right: 0px;
+  z-index: 999;
+}
+.fixed-contact-info a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+}
+.fixed-contact-info a img {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  border-radius: 50%;
+  /* padding: 10px; */
+}
+
+p {
+  line-height: 200%;
+}
+.remove {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  /* transition: all 500ms ease; */
+}
+.set {
+  display: block;
+  height: auto;
+}
